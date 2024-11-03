@@ -1,12 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
-* {
-    margin: 0px;
-    font-family: 'Manrope';
-    padding: 10px;
+:root {
+    font-size: 14pt;
+    font-family: 'Instrument Sans';
+}
+
+body {
+    color: white;
+    background: black;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 100%;
+    align-items: center;
+    position: fixed;
 }
 
 .nav-item {
-    padding-left: 5px;
-    padding-right: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    width: 100%;
+    transition: 150ms;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 20px white;
+}
+
+main {
+    margin-left: 15rem;
 }
