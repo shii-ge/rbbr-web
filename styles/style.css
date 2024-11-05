@@ -14,15 +14,19 @@ body {
 
 header {
     font-size: 14pt;
+    background: linear-gradient(to bottom, black , #00000000);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 5%;
+    position: sticky;
+    top: 0;
 }
 
 header a {
     color: white;
     transition: 200ms;
+    text-decoration: none;
 }
 header a:hover {
     text-shadow: 0 0 15px white;
@@ -31,7 +35,18 @@ header a:hover {
 }
 
 main {
-    margin: 12rem;
+    margin: 0 auto;
+    max-width: 70%;
+    font-size: 13pt;
+}
+
+#sm {
+    border-radius: 25px;
+    font-size: 12pt;
+    padding: 12px;
+    width: 150px;
+    font-weight: bold;
+    border-color: #ffffff00;
 }
 
 .navlinks {
@@ -52,4 +67,22 @@ main {
     text-shadow: 0 0 15px white;
     font-weight: bold;
     color: white;
+}
+
+.page-title {
+    text-shadow: 0 0 30px black;
+    font-size: 32pt;
+}
+
+.event-url {
+    color: rgb(162, 184, 255);
+    font-weight: bold;
+}
+
+.img-card {
+    transition: 250ms;
+}
+
+.img-card:hover {
+    transform: scale(1.05);
 }
