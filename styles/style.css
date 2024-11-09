@@ -75,6 +75,24 @@ th, td {
     opacity: .854;
 }
 
+#live-search {
+    width: 30%;
+    margin: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #ffffff00;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 14pt;
+    transition: 150ms;
+}
+
+#live-search:focus {
+    background: #00000070;
+    outline: none;
+}
+
 .navlinks {
     list-style: none;
 }
