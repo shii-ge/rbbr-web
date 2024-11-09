@@ -20,6 +20,36 @@
     </header>
     <main>
         <h1 class="page-title">Partidas</h1>
+        <br>
+        <div style="display: flex; margin-bottom: 20px;">
+            <div style="flex: 1; padding-right: 20px; text-shadow: 0 0 15px black, 0 0 15px black;">
+                <br>
+                <p>As partidas listadas abaixo representam os diversos confrontos entre os jogadores da comunidade brasileira de Melty Blood. A tabela mostra os jogadores, seus seeds (seeds representam as posições de classificação inicial), os resultados das partidas e o evento ao qual cada confronto pertence. Cada linha da tabela reflete um match entre dois participantes, incluindo o placar final e os nomes dos jogadores envolvidos. Confira abaixo os detalhes das partidas!</p>
+            </div>
+            <div>
+                <img src="../img/snapshot.jpg" class="img-card" alt="Descrição da Imagem" style="max-width: 400px; height: auto;">
+            </div>
+        </div>
+        <div style="height: 100%;">
+            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
+                <thead>
+                    <tr>
+                        <th style="width: 6%;">#</th>
+                        <th style="width: 8%;">Seed</th>
+                        <th style="width: 25%;">Nome</th>
+                        <th style="width: 5%;"></th>
+                        <th style="width: 5%;"></th>
+                        <th style="width: 25%;">Nome</th>
+                        <th style="width: 8%;">Seed</th>
+                        <th style="width: 18%;">Evento</th>
+                    </tr>
+                </thead>
+                <tbody id="match-wrapper">
+                    <!-- CONTEUDO ADICIONADO DINAMICAMENTE -->
+                </tbody>
+            </table>
+        </div>
     </main>
+    <script src="../scripts/matches.js"></script>
 </body>
 </html>
