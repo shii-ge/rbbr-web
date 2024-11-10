@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="../index.html">logo</a>
+        <a href="../index.html"><img src="../img/logo.png" height="100vh" class="logo"></a>
         <nav>
             <ul class="navlinks">
                 <li><a href="events.html">Eventos</a></li>
@@ -20,6 +20,29 @@
     </header>
     <main>
         <h1 class="page-title">Jogadores</h1>
+        <div id="player-container">
+            <h2>
+                <img src="" class="flag" alt="Flag">
+                <span id="nome">...</span>
+            </h2>
+            <div style="display: flex;">
+                <img class="char-image">
+                <div style="font-size: 16pt;">
+                    <h3 style="font-size: 22pt; margin-bottom: 1rem;">Estatísticas</h3>
+                    <h4 style="font-size: 18pt; margin-bottom: .6rem;">Sets / Partidas</h4>
+                    <p id="win">Vitórias: </p>
+                    <p id="los">Derrotas: </p><br>
+                    <h4 style="font-size: 18pt; margin-bottom: .6rem;">Jogos individuais</h4>
+                    <p id="jogosw">Jogos vencidos: </p>
+                    <p id="jogosl">Jogos perdidos: </p>
+                </div>
+            </div>
+        </div>
+        <div id="player-list" style="padding-bottom: 5%; width: 80%;">
+            <h2>Lista de jogadores</h2>
+            <!-- CONTEUDO ADICIONADO DINAMICAMENTE -->
+        </div>
     </main>
+    <script src="../scripts/players.js"></script>
 </body>
 </html>

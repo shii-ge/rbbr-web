@@ -9,24 +9,24 @@ fetch('../data/matches.json')
 
                 if (match.scorep1 > match.scorep2) {
                     row.innerHTML = `
-                        <td>${match.match_id}</td>
-                        <td class="text-dark">${match.seedp1}</td>
-                        <td class="text-row matchwin-1"><b>${match.namep1}</b></td>
+                        <td>${match.match_id.toString().padStart(3, '0')}</td>
+                        <td class="text-dark">#${match.seedp1}</td>
+                        <td class="text-row matchwin-1"><b><a href="../pages/players.html?id=${match.namep1}" class="player-link">${match.namep1}</a></b></td>
                         <td><b>${match.scorep1}</b></td>
                         <td class="text-dark">${match.scorep2}</td>
-                        <td class="text-row"><b>${match.namep2}</b></td>
-                        <td class="text-dark">${match.seedp2}</td>
+                        <td class="text-row"><b><a href="../pages/players.html?id=${match.namep2}" class="player-link">${match.namep2}</a></b></td>
+                        <td class="text-dark">#${match.seedp2}</td>
                         <td>${match.event}</td>
                     `;
                 } else {
                     row.innerHTML = `
-                        <td>${match.match_id}</td>
-                        <td class="text-dark">${match.seedp1}</td>
-                        <td class="text-row"><b>${match.namep1}</b></td>
+                        <td>${match.match_id.toString().padStart(3, '0')}</td>
+                        <td class="text-dark">#${match.seedp1}</td>
+                        <td class="text-row"><b><a href="../pages/players.html?id=${match.namep1}" class="player-link">${match.namep1}</a></b></td>
                         <td class="text-dark">${match.scorep1}</td>
                         <td><b>${match.scorep2}</b></td>
-                        <td class="text-row matchwin-2"><b>${match.namep2}</b></td>
-                        <td class="text-dark">${match.seedp2}</td>
+                        <td class="text-row matchwin-2"><b><a href="../pages/players.html?id=${match.namep2}" class="player-link">${match.namep2}</a></b></td>
+                        <td class="text-dark">#${match.seedp2}</td>
                         <td>${match.event}</td>
                     `;
                 }
