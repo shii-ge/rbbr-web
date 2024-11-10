@@ -12,7 +12,7 @@ fetch('../data/events.json')
             div.style.borderRadius = "25px";
             div.style.marginBottom = "20px";
             div.innerHTML = `
-                <img src="${event.img}" alt="${event.nome}" width="300px" class="img-card" style="float: right; height: auto; margin-left: 30px; margin-bottom: 20px;">
+                <a href="${event.url}" target="_blank"><img src="${event.img}" alt="${event.nome}" width="300px" class="img-card" style="float: right; height: auto; margin-left: 30px; margin-bottom: 20px;"></a>
                 <h3 style="font-size: 18pt; margin-bottom: 1rem;">${event.nome}</h3>
                 <p style="margin-bottom: .75rem; text-align: justify;">${event.desc}</p>
                 <p style="margin-bottom: .75rem">Data: <b>${event.data}</b></p>

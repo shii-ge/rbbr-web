@@ -44,7 +44,7 @@ main {
 }
 
 tr {
-    background-color: #00000090;
+    background-color: #00000080;
     border-bottom: 1px solid #ddd;
 }
 
@@ -86,10 +86,11 @@ th, td {
     color: white;
     font-size: 14pt;
     transition: 150ms;
+    filter: drop-shadow(0 0 5px black);
 }
 
 #live-search:focus {
-    background: #00000070;
+    background: #00000050;
     outline: none;
 }
 
@@ -130,6 +131,8 @@ th, td {
 
 .img-card:hover {
     transform: scale(1.05);
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px black);
 }
 
 .text-row {
@@ -137,7 +140,6 @@ th, td {
 }
 
 .text-row:hover {
-    font-style: italic;
     text-shadow: 0 0 15px white;
     cursor: pointer;
 }

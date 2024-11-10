@@ -23,16 +23,15 @@
         <br>
         <div style="display: flex; margin-bottom: 20px;">
             <div style="flex: 1; padding-right: 20px; text-shadow: 0 0 15px black, 0 0 15px black;">
-                <br>
-                <p>As partidas listadas abaixo representam os diversos confrontos entre os jogadores da comunidade brasileira de Melty Blood. A tabela mostra os jogadores, seus seeds (seeds representam as posições de classificação inicial), os resultados das partidas e o evento ao qual cada confronto pertence. Cada linha da tabela reflete um match entre dois participantes, incluindo o placar final e os nomes dos jogadores envolvidos. Confira abaixo os detalhes das partidas!</p>
+                <p style="margin-top: .5rem; letter-spacing: 1px; line-height: 20pt;">As partidas listadas abaixo representam os diversos confrontos entre os jogadores da comunidade brasileira de Melty Blood. A tabela mostra os jogadores, seus seeds (seeds representam as posições de classificação inicial), os resultados das partidas e o evento ao qual cada confronto pertence. Cada linha da tabela reflete um match entre dois participantes, incluindo o placar final e os nomes dos jogadores envolvidos. Confira abaixo os detalhes das partidas!</p>
             </div>
             <div>
                 <img src="../img/snapshot.jpg" class="img-card" alt="Descrição da Imagem" style="max-width: 400px; height: auto;">
             </div>
         </div>
         <div style="height: 100%;">
-            <span style="font-size: 16pt;">Pesquisar: </span><input type="text" id="live-search">
-            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
+            <span style="font-size: 16pt;">Pesquisar: </span><input type="text" id="live-search" onkeyup="searchTable()">
+            <table id="main-table" style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
                 <thead>
                     <tr>
                         <th style="width: 6%;">#</th>

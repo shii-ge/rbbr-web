@@ -39,3 +39,26 @@ fetch('../data/matches.json')
     .catch(error => {
         console.error('Erro ao carregar dados...', error);
     });
+
+function searchTable() {
+    const input = document.getElementById("live-search");
+    const filter = input.value.toLowerCase();
+    const table = document.getElementById("main-table");
+    const rows = document.getElementsByTagName("tr");
+
+    for (let i=1; i<rows.length; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+        let found = false;
+        for (let j=0; j<cells.length; j++) {
+            if (cells[j].textContent.toLowerCase().indexOf(filter) > -1) {
+                found = true;
+                break;
+            }
+        }
+        if (found) {
+            rows[i].style.display = "";
+        } else {
+            rows[i].style.display = "none";
+        }
+    }
+}
