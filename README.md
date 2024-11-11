@@ -4,7 +4,7 @@ O objetivo desse projeto é elaborar um protótipo de uma página web destinada 
 
 ## ✅ Tarefas
 
-- [ ] Página inicial
+- [X] Página inicial
 - [X] Tabela (e pesquisa) de partidas
 - [X] Página de jogadores
 - [X] Página de eventos
