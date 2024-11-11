@@ -9,3 +9,4 @@ O objetivo desse projeto é elaborar um protótipo de uma página web destinada 
 - [X] Página de jogadores
 - [X] Página de eventos
     - [X] Estrutura básica
+- [X] Saiba mais
